@@ -12,15 +12,15 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		output("---------- Datum / outputn --------------------");
+		output("---------- Datum / output ---------------------");
 		
 		// // aktuelle Datum
-		// LocalDate today = LocalDate.now();
-		// output("Heutiges Datum: " + today);
+		LocalDate today = LocalDate.now();
+		output("Heutiges Datum: " + today);
 		
 		// // bestimmtes Datum
-		// LocalDate givenDate = LocalDate.of(2012, Month.SEPTEMBER, 21);
-		// output("Bestimmtes Datum: " + givenDate);
+		LocalDate givenDate = LocalDate.of(2012, Month.SEPTEMBER, 21);
+		output("Bestimmtes Datum: " + givenDate);
 		
 		// // nächste Woche
 		// LocalDate aWeekFromToday = today.plusWeeks(1);
@@ -71,13 +71,13 @@ public class App {
 		
 		output("---------- DateTime --------------------");
 		
-		// LocalDateTime timeStamp = LocalDateTime.now();
-		// output("timeStamp: " + timeStamp );
+		LocalDateTime timeStamp = LocalDateTime.now();
+		output("timeStamp: " + timeStamp );
 		
-		// System.out.println("---------- Kalenderwoche --------------------");
+		output("---------- Kalenderwoche --------------------");
 		
-        // Calendar cal = Calendar.getInstance();
-        // output("Kalenderwoche: " + cal.get(Calendar.WEEK_OF_YEAR)); 
+        Calendar cal = Calendar.getInstance();
+        output("Kalenderwoche: " + cal.get(Calendar.WEEK_OF_YEAR)); 
 
 	}
 
